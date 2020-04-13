@@ -1,237 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+<html lang = 'en'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel = "stylesheet" type = "text/css" href="resources/css/style.css">
+        <link rel = "stylesheet" type = "text/css" href= "vendors/css/grid.css">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+        <title>My Portfolio</title>
+    
+    </head>
+    <body>
+       <header>
+            <nav>     
+           <div class = "row">
+               <img src="resources/css/img/logo-white.png" class="logo">
+                       
+               <ul class="main-nav">
+                   <li><a href="#">Food Delivery</a></li>
+                   <li><a href="#">How it works</a></li>
+                   <li><a href="#">Our Cities</a></li>
+                   <li><a href="#">Sign Up</a></li>
+               </ul>   
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </nav>       
+           
+       <div class="hero-text-box">
+           <h1>Goodbye junk food.<br>
+               Hello super healthy meals.</h1>
+           <a class="btn btn-full" href="#">I’m hungry</a>
+           <a class="btn btn-ghost" href="#">Show me more</a>
+       
+       </div> 
+       </header>
+    
+        <section class="section-features">
+            <div class="row">
+            <h2>Get food fast &mdash; not fast food.</h2>
+            <p class="long-copy">
+                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+            </p>    
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
+            
+            <div class="row">
+            <div class="col span-1-of-4 box">
+            <ion-icon name="infinite" class="icon-big"></ion-icon>
+            <h3>Up to 365 days/year</h3>   
+            <p>
+                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+            </p>
+            </div>
+                     
+            <div class="col span-1-of-4 box">
+                <ion-icon name="time" class = "icon-big"></ion-icon>
+            <h3>Ready in 20 minutes</h3>   
+            <p>
+                You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+            </p>
+            </div>            
+            <div class="col span-1-of-4 box">
+                <ion-icon name="leaf" class = "icon-big"></ion-icon>
+            <h3>100% organic</h3>   
+            <p>
+               All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+            </p>
+            </div>   
+            <div class="col span-1-of-4 box">
+                <ion-icon name="cart" class = "icon-big"></ion-icon>
+            <h3>Order anything</h3>   
+            <p>
+                We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!    
+            </p>
+            </div>   
+            </div>
+        </section>
+        <section class="section-meals">
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                </figure>
+            
+            </li>
+            <li>
+                <figure  class="meal-photo">
+                    <img src="resources/css/img/3.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/4.jpg" alt="Autumn pumpkin soup">
+                </figure>
+            
+            </li>
+            
+        </ul>
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/5.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                </figure>
+            
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/7.jpg" alt="Burger with cheddar and bacon">
+                </figure>
+            
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/8.jpg" alt="Granola with cherries and strawberries">
+                </figure>
+            
+            </li>
+            
+        </ul>    
+    </section>
+    <section class="section-steps">
+    <div class="row">
+        <h2>How it works - Simple as 1, 2, 3</h2>
+        </div>    
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+            <img src="resources/css/img/app-iPhone.png" alt="App Screen" class="app-screen">
+            </div>
+            <div class = "col span-1-of-2 steps-box">
+                <div class="works-step">
+                    <div>1</div>
+                    <p>Choose the subscription plan that best fits your needs and sign up today</p>
+                </div>
+                <div class="works-step">
+                    <div>2</div>
+                    <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                </div>
+                <div class="works-step">
+                    <div>3</div>
+                    <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                </div>
+                
+                <a href="#" class="btn-app"><img src="resources/css/img/download-app-android.png" alt="Apple Store"></a>
+                <a href="#" class="btn-app"><img src="resources/css/img/download-app-android.png" alt="Play Store"></a>
+            </div>
+        </div>
+        
+    </section>
+        
+    <section class="section-cities">
+        <div class="row">
+        <h2>We're currently in these cities</h2>
+        </div> 
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/lisbon-3.jpg" alt="Lisbon">
+                <h3>Lisbon</h3> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="person" class="icon-small"></ion-icon>
+                        1600+ happy eaters
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="star" class="icon-small"></ion-icon>
+                        60+ top chefs
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                        <a href="#">@omnifood_lx</a>
+                    </div> 
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/san-francisco.jpg" alt="Lisbon">
+                <h3>San Francisco</h3> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="person" class="icon-small"></ion-icon>
+                        3700+ happy eaters
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="star" class="icon-small"></ion-icon>
+                        160+ top chefs
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                        <a href="#">@omnifood_sf</a>
+                    </div> 
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/berlin.jpg" alt="Lisbon">
+                <h3>Berlin</h3> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="person" class="icon-small"></ion-icon>
+                        2300+ happy eaters
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="star" class="icon-small"></ion-icon>
+                        110+ top chefs
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                        <a href="#">@omnifood_berlin</a>
+                    </div> 
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/london.jpg" alt="Lisbon">
+                <h3>London</h3> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="person" class="icon-small"></ion-icon>
+                        1200+ happy eaters
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="star" class="icon-small"></ion-icon>
+                        50+ top chefs
+                    </div> 
+                    <div class = "city-feature"> 
+                        <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                       <a href="#">@omnifood_london</a>
+                    </div> 
+            </div>
+        </div>
+    </section>  
+        
+    <section class="section-testinomials">
+        <div class="row"> 
+            <h2>Our customers can't live without us</h2>
+        </div>
+        <div class=row>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                    <cite><img src="resources/css/img/customer-1.jpg">Alberto Duncan</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                    <cite><img src="resources/css/img/customer-2.jpg">Joana Silva</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    <cite><img src="resources/css/img/customer-3.jpg">Milton Chapman</cite>
+                </blockquote>
+            </div>
+        </div>
+        
+    </section>  
+    <section class="section-plans">
+        <div class="row">
+        <h2>Start eating healthy today</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="plan-price">$399<span>/ Month</span></p>
+                        <p class="plan-meal">That’s only 13.30$ per meal</p>
+                    </div>  
+                    <div>
+                        <ul>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal every day</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Order 24/7</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Access to newest creations</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Free delivery </li>
+                        </ul>    
+                    </div>
+                    <div>
+                    <a href="#" class="btn btn-full">Sign Up Now</a>
+                    </div>
+                   </div>
+            </div>
+             <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">$140 <span>/ Month</span></p>
+                        <p class="plan-meal">That’s only 14.90$ per meal</p>
+                    </div>  
+                    <div>
+                        <ul>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal 10 days/month</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Order 24/7</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Access to newest creations</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Free delivery </li>
+                        </ul>    
+                    </div>
+                    <div>
+                    <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                    </div>
+                   </div>
+            </div>
+              <div class="col span-1-of-3">
+                 <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">$19<span>/ Meal</span></p>
+                        <p class="plan-meal">&nbsp</p>
+                    </div>  
+                    <div>
+                        <ul>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Order from 8 am to 12 pm</li>
+                        <li><ion-icon name="close" class="icon-small"></ion-icon>Access to newest creations</li>
+                        <li><ion-icon name="checkmark" class="icon-small"></ion-icon>Free delivery </li>
+                        </ul>    
+                    </div>
+                    <div>
+                    <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                    </div>
+                   </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class = "contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Name</label>    
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>How did you find us?</label>    
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="Internet">Internet</option>
+                        <option value="others">Others</option>
+                        </select> 
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Yes, Please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value = "Send it!">
+                    </div>
+                </div>
+            </form>
+        
+        
+        </div>
+        
+        
+    </section>
+    </body>
 </html>
